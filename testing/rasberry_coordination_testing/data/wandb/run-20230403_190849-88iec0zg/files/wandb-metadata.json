@@ -1,0 +1,117 @@
+{
+    "os": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-04-03T18:08:49.926530",
+    "startedAt": "2023-04-03T18:08:49.094673",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/james/ros2_ws/src/rasberry_coordination/testing/rasberry_coordination_testing/visualise.py",
+    "codePath": "testing/rasberry_coordination_testing/visualise.py",
+    "git": {
+        "remote": "https://github.com/Iranaphor/rasberry_coordination.git",
+        "commit": "b774dddb393d93ba1ee1ebe9e0dde800991b2e5f"
+    },
+    "email": "primordia@live.com",
+    "root": "/home/james/ros2_ws/src/rasberry_coordination",
+    "host": "pc",
+    "username": "james",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2.31025,
+        "min": 800.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1.363,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.3,
+            "min": 800.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "total": 278.9842834472656,
+        "used": 91.39054107666016
+    },
+    "memory": {
+        "total": 31.02740478515625
+    }
+}

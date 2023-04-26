@@ -1,0 +1,52 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.14.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.6
+    start_time: 1680351866.946552
+    t:
+      1:
+      - 55
+      2:
+      - 55
+      3:
+      - 2
+      - 23
+      4: 3.10.6
+      5: 0.14.0
+      8:
+      - 5
+    visualize:
+      route_tables_ultra:
+        panel_config:
+          fieldSettings:
+          - x
+          - y
+          - colour
+          panelDefId: iranaphor/topologicalmap
+          stringSettings: {}
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: route_tables_ultra_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2

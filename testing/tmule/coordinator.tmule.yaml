@@ -35,7 +35,7 @@ windows:
 
 - name: rviz
   panes:
-  - rviz #-d $RVIZ_CONFIG
+  - rviz2 -d $RVIZ_CONFIG
   - ros2 run topological_navigation topomap_marker.py
   - ros2 run rasberry_coordination_core agent_markers.py
 #  - ros2 launch rasberry_navigation map_server.launch map:="$METRIC_MAP" use_no_go:=true no_go_map:="$NOGO_MAP"

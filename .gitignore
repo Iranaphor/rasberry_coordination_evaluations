@@ -125,3 +125,5 @@ venv.bak/
 **/*.swp
 
 **/*.*.save
+
+**/output_file.txt

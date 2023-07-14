@@ -6,7 +6,7 @@ init_cmd: |
   set -o pipefail
 
   # get and source the details for the workspace from rasberryrc
-  source $HOME/ws/src/runcom.sh
+  source $WS_DIR/src/runcom.sh
   #source $(rospack find rasberry_core)/new_tmule/tmule_config/init_cmd_tools.sh
   #source $(rospack find rasberry_core)/new_tmule/tmule_config/init_cmd_setup.sh
 

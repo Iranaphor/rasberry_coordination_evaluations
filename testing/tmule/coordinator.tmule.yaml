@@ -16,18 +16,19 @@ init_cmd: |
   #uri_server
 
 windows:
-#- name: mqtt_broker
-#  panes: ros2 launch rasberry_networking mqtt_broker.launch ip:=$MQTT_IP port:=$MQTT_PORT
+#- name: mqtt_field_system
+#  panes:
+#  - ros2 launch farm_networking mqtt_field_broker.launch port:=$MQTT_FIELD_PORT
+#  - ros2 launch farm_networking mqtt_field_server.launch port:=$MQTT_FIELD_PORT ip:=$MQTT_FIELD_IP client_id:=field
 
-#- name: mqtt_server
-#  panes: ros2 launch rasberry_networking mqtt_server.launch ip:=$MQTT_IP port:=$MQTT_PORT client_id:=coordinator
+#- name: mqtt_farm_server
+#  panes:
+#  - ros2 launch farm_networking mqtt_farm_client.launch ip:=$MQTT_FARM_IP port:=$MQTT_FARM_PORT client_id:=$FIELD_NAME
 
-- name: topomap_management
+- name: environment
   panes:
-  - ros2 run topological_navigation map_manager2.py $TMAP_FILE
-  - ros2 run topological_navigation topological_transform_publisher.py
-#  - ros2 run rasberry_coordination_core restrictor.py $EVAL_SHORT
-#  - ros2 run rasberry_coordination_core restrictor.py $EVAL_TALL
+  - ros2 launch environment_common environment.launch.py
+#  - ros2 launch rasberry_navigation map_server.launch map:="$METRIC_MAP" use_no_go:=true no_go_map:="$NOGO_MAP"
 
 - name: coordinator
   panes:
@@ -38,7 +39,6 @@ windows:
   - rviz2 -d $RVIZ_CONFIG
   - ros2 run topological_navigation topomap_marker.py
   - ros2 run rasberry_coordination_core agent_markers.py
-#  - ros2 launch rasberry_navigation map_server.launch map:="$METRIC_MAP" use_no_go:=true no_go_map:="$NOGO_MAP"
 
 #- name: scheduler
 #  panes:

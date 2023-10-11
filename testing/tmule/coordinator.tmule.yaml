@@ -9,7 +9,7 @@ init_cmd: |
   source $WS_DIR/src/runcom.sh
   #source $(rospack find rasberry_core)/new_tmule/tmule_config/init_cmd_tools.sh
   #source $(rospack find rasberry_core)/new_tmule/tmule_config/init_cmd_setup.sh
-
+  export ROS_DOMAIN_ID=1
   # Source the environment variables for the scenario
   #source_module rasberry_coordination_core tmule-server-simulated.sh
   clear -x
@@ -37,7 +37,6 @@ windows:
 - name: rviz
   panes:
   - rviz2 -d $RVIZ_CONFIG
-  - ros2 run topological_navigation topomap_marker.py
   - ros2 run rasberry_coordination_core agent_markers.py
 
 #- name: scheduler
